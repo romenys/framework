@@ -9,6 +9,6 @@
 namespace Romenys\Framework\Components;
 
 
-class Manager
+class Repository
 {
 }
