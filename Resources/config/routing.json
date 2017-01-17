@@ -1,0 +1,5 @@
+{
+  "file": {
+    "test": "vendor/romenys/framework/Resources/config/routing/test.json"
+  }
+}

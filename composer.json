@@ -1,0 +1,26 @@
+{
+    "name": "romenys/framework",
+    "description": "The libraries required to run romenys core",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Khalid Sookia",
+            "email": "khalidsookia@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "iknsa/helper-bundle": ">=0.0.1",
+        "romenys/router": ">=0.0.1",
+        "romenys/helpers": ">=0.0.1",
+        "romenys/http": ">=0.0.1",
+        "romenys/logger": ">=0.0.1"
+    },
+    "autoload": {
+        "psr-4": { "Romenys\\Framework\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
