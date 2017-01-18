@@ -26,7 +26,7 @@ class EmailValidator extends Validator
 
     protected function validateEmail($data, $params = null)
     {
-        if(filter_var($data, FILTER_VALIDATE_EMAIL)) {
+        if(filter_var(trim($data), FILTER_VALIDATE_EMAIL)) {
             $this->setValid(true);
         } else {
             $error = isset($params["validator"]["error"]["emailFormat"]) ? $params["validator"]["error"]["emailFormat"] : "L'adresse mail n'est pas valide. Il y a probablement une erreur de syntaxe";

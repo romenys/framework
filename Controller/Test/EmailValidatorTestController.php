@@ -48,10 +48,21 @@ class EmailValidatorTestController extends Controller
         $emailValidator = new EmailValidator('vefq fqef@fdqfezd.com');
         dump(!$emailValidator->isValid());
 
+        $emailValidator = new EmailValidator('  vefqfqef@fdqfezd.com');
+        dump($emailValidator->isValid());
+
+        $emailValidator = new EmailValidator('vefqfqef@fdqfezd.com  ');
+        dump($emailValidator->isValid());
+
         $emailValidator = new EmailValidator('@vdqvddcq.com');
         dump(!$emailValidator->isValid());
 
         $emailValidator = new EmailValidator('fdqfe.com');
         dump(!$emailValidator->isValid());
+
+        $errors = [];
+        if (!$emailValidator->isValid()) $errors = $emailValidator->getErrors();
+
+        //$emailValidator = new OnlyBnpEmailValidator('khalid.sookia@bnpparibas.com');
     }
 }
