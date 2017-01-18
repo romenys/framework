@@ -1,10 +1,9 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use Romenys\Framework\Validator\Validators\FrenchPhoneValidator;
 
 
-class FrenchPhoneValidatorTest extends TestCase
+class FrenchPhoneValidatorTest extends PHPUnit_Framework_TestCase
 {
     public function testValidateFrenchPhoneNumber()
     {
