@@ -43,7 +43,10 @@ class Model
             $result = array();
 
             foreach ($data as $key => $value) {
-                $result[$key] = $this->toArray($value);
+                if (is_object($value))
+                    $result[$key] = $this->toArray($value);
+                else
+                    $result[$key] = $value;
             }
 
             return $result;
