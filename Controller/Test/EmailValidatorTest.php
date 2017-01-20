@@ -1,9 +1,8 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use Romenys\Framework\Validator\Validators\EmailValidator;
 
-class EmailValidatorTest extends TestCase
+class EmailValidatorTest extends PHPUnit_Framework_TestCase
 {
     public function testValidateEmail()
     {
