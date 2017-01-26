@@ -9,7 +9,7 @@
 namespace Romenys\Framework\Components;
 
 
-class Model
+class Model implements ModelInterface
 {
     public function __construct($data = [])
     {
