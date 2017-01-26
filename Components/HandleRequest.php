@@ -12,7 +12,7 @@ use Romenys\Framework\Controller\Controller;
 use Romenys\Http\Request\Request;
 use Romenys\Router\Util\Router;
 
-class HandleRequest
+class HandleRequest implements HandleRequestInterface
 {
     private $request = null;
 
