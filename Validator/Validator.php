@@ -8,7 +8,7 @@
 
 namespace Romenys\Framework\Validator;
 
-class Validator
+class Validator implements ValidatorInterface
 {
     /**
      * @var string
