@@ -12,7 +12,7 @@ namespace Romenys\Framework\Controller;
 use Knp\Snappy\Pdf;
 use Romenys\Framework\Components\Parameters;
 
-class Controller
+class Controller implements ControllerInterface
 {
     /**
      * @param string $templateDir Directory containing the template
