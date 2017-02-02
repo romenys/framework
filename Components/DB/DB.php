@@ -49,10 +49,12 @@ class DB extends \PDO
                     $this->getParameters()["db_user"], $this->getParameters()["db_pass"]
                 );
             } catch (\PDOException $e) {
-                if (!$this->getParameters()["debug"])
+                if (!$this->getParameters()["debug"]) {
                     exit("Unable to connect to db");
-                else
+                } else {
                     dump($e);
+                    exit("Unable to connect to db");
+                }
             }
         }
 
