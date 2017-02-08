@@ -40,7 +40,7 @@ class DB extends \PDO
     {
         if (strtolower($this->getParameters()["db_driver"]) === "pdo_mysql") {
             try {
-                if (!isset($this->getParameters()["db_charset"]) || $this->getParameters()["db_charset"]) $db_charset = "latin1";
+                if (!isset($this->getParameters()["db_charset"])) $db_charset = "latin1";
                 else $db_charset = $this->getParameters()["db_charset"];
 
                 return new \PDO(
