@@ -6,10 +6,10 @@
  * Time: 18:25
  */
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
-use Romenys\Router\Util\Router;
-use Romenys\Http\Request\Request;
+use PhpLight\Router\Util\Router;
+use PhpLight\Http\Request\Request;
 
 class UrlGenerator
 {

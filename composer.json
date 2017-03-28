@@ -1,6 +1,6 @@
 {
-    "name": "romenys/framework",
-    "description": "The libraries required to run romenys core",
+    "name": "php-light/framework",
+    "description": "The libraries required to run php-light core",
     "type": "library",
     "authors": [
         {
@@ -11,13 +11,13 @@
     "require": {
         "php": ">=5.4",
         "iknsa/helper-bundle": ">=0.0.1",
-        "romenys/router": ">=0.0.1",
-        "romenys/helpers": ">=0.0.1",
-        "romenys/http": ">=0.0.1",
-        "romenys/logger": ">=0.0.1"
+        "php-light/router": ">=0.0.1",
+        "php-light/helpers": ">=0.0.1",
+        "php-light/http": ">=0.0.1",
+        "php-light/logger": ">=0.0.1"
     },
     "autoload": {
-        "psr-4": { "Romenys\\Framework\\": "" },
+        "psr-4": { "PhpLight\\Framework\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]

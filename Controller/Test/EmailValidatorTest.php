@@ -1,6 +1,6 @@
 <?php
 
-use Romenys\Framework\Validator\Validators\EmailValidator;
+use PhpLight\Framework\Validator\Validators\EmailValidator;
 
 class EmailValidatorTest extends PHPUnit_Framework_TestCase
 {

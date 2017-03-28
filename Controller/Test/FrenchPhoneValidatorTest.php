@@ -1,6 +1,6 @@
 <?php
 
-use Romenys\Framework\Validator\Validators\FrenchPhoneValidator;
+use PhpLight\Framework\Validator\Validators\FrenchPhoneValidator;
 
 
 class FrenchPhoneValidatorTest extends PHPUnit_Framework_TestCase

@@ -6,9 +6,9 @@
  * Time: 10:42
  */
 
-namespace Romenys\Framework\Validator\Validators;
+namespace PhpLight\Framework\Validator\Validators;
 
-use Romenys\Framework\Validator\Validator;
+use PhpLight\Framework\Validator\Validator;
 
 class EmailValidator extends Validator
 {

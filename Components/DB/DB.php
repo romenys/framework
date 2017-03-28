@@ -6,9 +6,9 @@
  * Time: 20:01
  */
 
-namespace Romenys\Framework\Components\DB;
+namespace PhpLight\Framework\Components\DB;
 
-use Romenys\Framework\Components\Parameters;
+use PhpLight\Framework\Components\Parameters;
 
 class DB extends \PDO
 {

@@ -1,18 +1,18 @@
 {
   "route": {
-    "romenys_framework_test_validator_french_phone": {
+    "php-light_framework_test_validator_french_phone": {
       "path": "/test/validator/french_phone",
-      "controller": "Romenys\\Framework\\Controller\\Test\\FrenchPhoneValidatorTest",
+      "controller": "PhpLight\\Framework\\Controller\\Test\\FrenchPhoneValidatorTest",
       "action": "validatorFrenchPhone"
     },
-    "romenys_framework_test_validator_email": {
+    "php-light_framework_test_validator_email": {
       "path": "/test/validator/email",
-      "controller": "Romenys\\Framework\\Controller\\Test\\EmailValidatorTest",
+      "controller": "PhpLight\\Framework\\Controller\\Test\\EmailValidatorTest",
       "action": "validatorEmail"
     },
-    "romenys_framework_test_validator_string": {
+    "php-light_framework_test_validator_string": {
       "path": "/test/validator/string",
-      "controller": "Romenys\\Framework\\Controller\\Test\\StringValidatorTest",
+      "controller": "PhpLight\\Framework\\Controller\\Test\\StringValidatorTest",
       "action": "validateStringTest"
     }
   }

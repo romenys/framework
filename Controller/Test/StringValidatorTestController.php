@@ -6,10 +6,10 @@
  * Time: 01:20
  */
 
-namespace Romenys\Framework\Controller\Test;
+namespace PhpLight\Framework\Controller\Test;
 
-use Romenys\Framework\Controller\Controller;
-use Romenys\Framework\Validator\Validators\StringValidator;
+use PhpLight\Framework\Controller\Controller;
+use PhpLight\Framework\Validator\Validators\StringValidator;
 
 class StringValidatorTestController extends Controller
 {

@@ -6,11 +6,11 @@
  * Time: 16:35
  */
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
-use Romenys\Framework\Controller\Controller;
-use Romenys\Http\Request\Request;
-use Romenys\Router\Util\Router;
+use PhpLight\Framework\Controller\Controller;
+use PhpLight\Http\Request\Request;
+use PhpLight\Router\Util\Router;
 
 class HandleRequest implements HandleRequestInterface
 {
@@ -97,7 +97,7 @@ class HandleRequest implements HandleRequestInterface
 
             if (!is_subclass_of(new $controller, Controller::class)) {
                 throw new \RuntimeException("The controller <strong>" . $controller . "</strong> must extend "
-                    . "<strong>Romenys\\Framework\\Controller\\Controller</strong>");
+                    . "<strong>PhpLight\\Framework\\Controller\\Controller</strong>");
             }
 
             $this->controller = $controller;

@@ -6,7 +6,7 @@
  * Time: 17:51
  */
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
 
 class Model implements ModelInterface

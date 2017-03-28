@@ -6,7 +6,7 @@
  * Time: 13:36
  */
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
 
 class Repository

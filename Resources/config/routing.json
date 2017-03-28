@@ -1,5 +1,5 @@
 {
   "file": {
-    "test": "vendor/romenys/framework/Resources/config/routing/test.json"
+    "test": "vendor/php-light/framework/Resources/config/routing/test.json"
   }
 }

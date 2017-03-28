@@ -1,6 +1,6 @@
 <?php
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
 Interface HandleRequestInterface
 {

@@ -6,9 +6,9 @@
  * Time: 09:35
  */
 
-namespace Romenys\Framework\Validator\Validators;
+namespace PhpLight\Framework\Validator\Validators;
 
-use Romenys\Framework\Validator\Validator;
+use PhpLight\Framework\Validator\Validator;
 
 class FrenchPhoneValidator extends Validator
 {

@@ -6,11 +6,11 @@
  * Time: 11:10
  */
 
-namespace Romenys\Framework\Controller\Test;
-use Romenys\Framework\Controller\Controller;
+namespace PhpLight\Framework\Controller\Test;
+use PhpLight\Framework\Controller\Controller;
 
-use Romenys\Http\Request\Request;
-use Romenys\Framework\Validator\Validators\EmailValidator;
+use PhpLight\Http\Request\Request;
+use PhpLight\Framework\Validator\Validators\EmailValidator;
 class EmailValidatorTestController extends Controller
 {
     public function validatorEmailAction(Request $request)

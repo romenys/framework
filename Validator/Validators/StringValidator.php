@@ -6,9 +6,9 @@
  * Time: 00:47
  */
 
-namespace Romenys\Framework\Validator\Validators;
+namespace PhpLight\Framework\Validator\Validators;
 
-use Romenys\Framework\Validator\Validator;
+use PhpLight\Framework\Validator\Validator;
 
 class StringValidator extends Validator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Romenys\Framework\Controller;
+namespace PhpLight\Framework\Controller;
 
 Interface ControllerInterface
 {

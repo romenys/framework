@@ -6,7 +6,7 @@
  * Time: 10:24
  */
 
-namespace Romenys\Framework\Validator;
+namespace PhpLight\Framework\Validator;
 
 class Validator
 {

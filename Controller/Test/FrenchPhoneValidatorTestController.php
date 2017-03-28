@@ -6,11 +6,11 @@
  * Time: 10:55
  */
 
-namespace Romenys\Framework\Controller\Test;
+namespace PhpLight\Framework\Controller\Test;
 
-use Romenys\Framework\Controller\Controller;
-use Romenys\Framework\Validator\Validators\FrenchPhoneValidator;
-use Romenys\Http\Request\Request;
+use PhpLight\Framework\Controller\Controller;
+use PhpLight\Framework\Validator\Validators\FrenchPhoneValidator;
+use PhpLight\Http\Request\Request;
 
 class FrenchPhoneValidatorTestController extends Controller
 {

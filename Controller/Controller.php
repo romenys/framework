@@ -6,11 +6,11 @@
  * Time: 15:48
  */
 
-namespace Romenys\Framework\Controller;
+namespace PhpLight\Framework\Controller;
 
 
 use Knp\Snappy\Pdf;
-use Romenys\Framework\Components\Parameters;
+use PhpLight\Framework\Components\Parameters;
 
 class Controller
 {

@@ -6,9 +6,9 @@
  * Time: 21:08
  */
 
-namespace Romenys\Framework\Components;
+namespace PhpLight\Framework\Components;
 
-use Romenys\Helpers\GetEnvironmentByHostName;
+use PhpLight\Helpers\GetEnvironmentByHostName;
 
 class Config
 {
