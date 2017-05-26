@@ -84,7 +84,7 @@ class HandleRequest implements HandleRequestInterface
     private function setController()
     {
         try {
-            if (!isset($this->getRouteDetails()["controller"]) && trim($this->getRouteDetails()["controller"] === "")) {
+            if (!isset($this->getRouteDetails()["controller"]) || trim($this->getRouteDetails()["controller"] === "")) {
                 throw new \RuntimeException("No controller was set for the route <strong>" . $this->getRouteName() . "</strong>");
             }
 
