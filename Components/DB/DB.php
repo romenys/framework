@@ -24,40 +24,29 @@ class DB extends \PDO
 
     private function setParameters()
     {
-        $parameters = new Parameters();
-
-        $this->parameters = $parameters->getParameters();
+        $this->parameters = (new Parameters())->getParameters();
 
         return $this;
     }
 
-    private function getParameters()
-    {
-        return $this->parameters;
-    }
-
     public function connect()
     {
-        if (strtolower($this->getParameters()["db_driver"]) === "pdo_mysql") {
-            try {
-                if (!isset($this->getParameters()["db_charset"])) $db_charset = "latin1";
-                else $db_charset = $this->getParameters()["db_charset"];
+        try {
+            if (!isset($this->parameters["db_charset"])) $db_charset = "latin1";
+            else $db_charset = $this->parameters["db_charset"];
 
-                return new \PDO(
-                    "mysql:host=" . $this->getParameters()["db_host"] .
-                    ";dbname=" . $this->getParameters()["db_name"] . ";charset=" . $db_charset,
-                    $this->getParameters()["db_user"], $this->getParameters()["db_pass"]
-                );
-            } catch (\PDOException $e) {
-                if (!$this->getParameters()["debug"]) {
-                    exit("Unable to connect to db");
-                } else {
-                    dump($e);
-                    exit("Unable to connect to db");
-                }
+            return new \PDO(
+                "mysql:host=" . $this->parameters["db_host"] .
+                ";dbname=" . $this->parameters["db_name"] . ";charset=" . $db_charset,
+                $this->parameters["db_user"], $this->parameters["db_pass"]
+            );
+        } catch (\PDOException $e) {
+            if (!$this->parameters["debug"]) {
+                exit("Unable to connect to db");
+            } else {
+                dump($e);
+                exit("Unable to connect to db");
             }
         }
-
-        return $this->instance;
     }
 }
