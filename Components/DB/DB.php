@@ -32,7 +32,7 @@ class DB extends \PDO
     public function connect()
     {
         try {
-            if (!isset($this->parameters["db_charset"])) $db_charset = "latin1";
+            if (!isset($this->parameters["db_charset"])) $db_charset = "utf8";
             else $db_charset = $this->parameters["db_charset"];
 
             return new \PDO(
