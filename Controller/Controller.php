@@ -27,7 +27,10 @@ class Controller
         $cache = $parameters->getParameters()["cache"];
 
         $loader = new \Twig_Loader_Filesystem($templateDir);
-        $twig = new \Twig_Environment($loader, ["cache" => $cache]);
+        $twig = new \Twig_Environment($loader, [
+            "cache" => $cache,
+            'debug' => true
+        ]);
 
         return $twig->render($template, $data);
     }
