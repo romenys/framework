@@ -12,7 +12,7 @@ namespace PhpLight\Framework\Controller;
 use Knp\Snappy\Pdf;
 use PhpLight\Framework\Components\Parameters;
 
-class Controller
+class Controller implements ControllerInterface
 {
     /**
      * @param string $templateDir Directory containing the template
