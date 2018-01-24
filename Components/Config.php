@@ -32,7 +32,7 @@ class Config
         return $this;
     }
 
-    private function getEnvironment()
+    public function getEnvironment()
     {
         return $this->environment;
     }
