@@ -43,10 +43,11 @@ class Model implements ModelInterface
             $result = array();
 
             foreach ($data as $key => $value) {
-                if (is_object($value))
+                if (is_object($value)) {
                     $result[$key] = $this->toArray($value);
-                else
+                } else {
                     $result[$key] = $value;
+                }
             }
 
             return $result;

@@ -9,7 +9,6 @@
 namespace PhpLight\Framework\Controller;
 
 
-use Knp\Snappy\Pdf;
 use PhpLight\Framework\Components\Parameters;
 
 class Controller
@@ -18,6 +17,10 @@ class Controller
      * @param string $templateDir Directory containing the template
      * @param string $template Template full file name
      * @param array $data Data to inject to the template
+     *
+     * @throws \Twig_Error_Loader  When the template cannot be found
+     * @throws \Twig_Error_Syntax  When an error occurred during compilation
+     * @throws \Twig_Error_Runtime When an error occurred during rendering
      *
      * @return string
      */
